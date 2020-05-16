@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: spirngsecuritytest
+  security:
+    user:
+      name: zhangsan
+      password: 123456
+      roles: admin
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/springsecurity?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+server:
+  port: 8090
+mybatis:
+  type-aliases-package: com.spring.springsecuritytest.entity
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true #驼峰匹配
