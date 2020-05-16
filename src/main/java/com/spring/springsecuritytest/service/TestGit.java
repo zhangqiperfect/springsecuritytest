@@ -10,5 +10,15 @@ import org.springframework.stereotype.Component;
 public class TestGit {
     public String testGit() {
         return "hello git";
+
+    }
+
+    public String testGitPushToZQ() {
+        return "git-pushto-zq";
+    }
+
+    public String test() {
+        return "zq";
+
     }
 }
